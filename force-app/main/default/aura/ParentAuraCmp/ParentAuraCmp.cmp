@@ -1,0 +1,12 @@
+<!--
+ - @author Sean Lee
+ - @date 2021-08-13
+ - @description This component is used to call lwc service.
+ -->
+<aura:component description="ParentAuraCmp" controller="AccountService" implements="flexipage:availableForRecordHome,force:hasRecordId" access="global">
+    <aura:attribute name="boolEligible" type="Boolean" default="false" />
+    <aura:handler name="init" value="{!this}" action="{!c.checkAccountEligibility}" />
+    <c:accountEligibilityService aura:id="service" />
+    <h3>Account Eligibility Status</h3>
+    <div><strong>{!v.boolEligible}</strong></div>
+</aura:component>
