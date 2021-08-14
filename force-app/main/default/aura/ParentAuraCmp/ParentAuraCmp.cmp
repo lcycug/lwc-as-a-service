@@ -1,7 +1,7 @@
 <!--
  - @author Sean Lee
  - @date 2021-08-13
- - @description This component is used to call lwc service.
+ - @description This component is used to call the lwc service.
  -->
 <aura:component description="ParentAuraCmp" implements="flexipage:availableForRecordHome,force:hasRecordId" access="global">
     <aura:attribute name="boolEligible" type="Boolean" default="false" />
